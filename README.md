@@ -292,7 +292,7 @@ print("Predictions:", predictions)
 |---------|-------------------|-------------------|-------------------|
 | GastroEndoNet | ~60-90 min | ~20-30 min | 96-98% |
 | IIITDMJ_Smoke | ~45-75 min | ~15-25 min | 97-99% |
-| X-Ray | ~60-90 min | ~20-30 min | 95-98% |
+| X-Ray | ~60-90 min | ~20-30 min | 93-98% |
 
 ### Evaluation Metrics
 

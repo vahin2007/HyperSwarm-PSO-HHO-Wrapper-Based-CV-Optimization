@@ -1,0 +1,17 @@
+# Data and Caches
+__pycache__/
+feature_cache/
+*.npz
+*.npy
+*.csv
+
+# Models
+*.h5
+*.keras
+*.joblib
+saved_models/
+
+# Datasets (Add your dataset folder names here)
+IIITDMJ_Smoke/
+GastroEndoNet/
+X-Ray/

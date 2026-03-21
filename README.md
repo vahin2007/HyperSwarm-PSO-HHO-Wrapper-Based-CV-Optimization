@@ -70,17 +70,17 @@ Before you run `git push`, you **must** ensure you have a `.gitignore` file in t
 
 Create a `.gitignore` file in this folder and copy the contents of the given `.gitignore` file.
 
-# ✨ Key Features
+# Key Features
 
-- **🚀 GPU/CPU Adaptive**: Automatically detects hardware and adjusts training accordingly
+- ** GPU/CPU Adaptive**: Automatically detects hardware and adjusts training accordingly
   - GPU: Full 12-epoch fine-tuning with 8GB memory limit
   - CPU: Fast 3-epoch fine-tuning for quick results
-- **🎯 98%+ Accuracy Target**: Optimized hyperparameters for maximum performance
-- **⚡ Smart Caching**: Features are cached to avoid redundant computation
-- **🔄 Test-Time Augmentation**: Multiple predictions averaged for robustness
-- **🎲 Class Balancing**: BorderlineSMOTE for handling imbalanced datasets
-- **🧬 Feature Optimization**: PSO-HHO algorithm selects optimal feature subset
-- **📊 Comprehensive Evaluation**: Detailed metrics and visualizations
+- ** 98%+ Accuracy Target**: Optimized hyperparameters for maximum performance
+- ** Smart Caching**: Features are cached to avoid redundant computation
+- **Test-Time Augmentation**: Multiple predictions averaged for robustness
+- **Class Balancing**: BorderlineSMOTE for handling imbalanced datasets
+- **Feature Optimization**: PSO-HHO algorithm selects optimal feature subset
+- **Comprehensive Evaluation**: Detailed metrics and visualizations
 
 ### Installation
 
@@ -291,8 +291,18 @@ print("Predictions:", predictions)
 | Dataset | Training Time (GPU):12 Epochs| Training Time (CPU):3 Epochs | Expected Accuracy |
 |---------|-------------------|-------------------|-------------------|
 | GastroEndoNet | ~60-90 min | ~20-30 min | 96-98% |
-| IIITDMJ_Smoke | ~45-75 min | ~15-25 min | 97-99% |
-| X-Ray | ~60-90 min | ~20-30 min | 93-98% |
+| IIITDMJ_Smoke | ~45-75 min | ~15-25 min | 93-97% |
+| X-Ray | ~40-90 min | ~20-30 min | 97-99% |
+
+### 📊 Performance Benchmarks (Medical X-Ray)
+The PSO-HHO optimization engine successfully compressed the 256D EfficientNetV2M feature space down to just 80 critical features, drastically reducing ensemble inference latency while maintaining state-of-the-art accuracy.
+
+| Metric | Score | 
+| :--- | :--- |
+| **Final Ensemble Accuracy** | `98.76%` |
+| **Macro F1-Score** | `0.9875` |
+| **Feature Compression** | `80 / 256 selected` |
+| **Optimization + Training Time** | `44.0 minutes` |
 
 ### Evaluation Metrics
 

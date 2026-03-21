@@ -304,6 +304,9 @@ The PSO-HHO optimization engine successfully compressed the 256D EfficientNetV2M
 | **Feature Compression** | `80 / 256 selected` |
 | **Optimization + Training Time** | `44.0 minutes` |
 
+### 📈 X-Ray Diagnostic Optimization Results
+![PSO-HHO Convergence and Confusion Matrix](./samples/xray_optimization_results.png)
+
 ### Evaluation Metrics
 
 The pipeline provides:
